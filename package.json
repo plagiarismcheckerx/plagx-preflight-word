@@ -1,0 +1,17 @@
+{
+  "name": "plagx-preflight-word",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Plagx Draft Preflight for Microsoft Word: word count, citations, punctuation and basic grammar checks in a Word task pane. By Plagiarism Checker X.",
+  "scripts": {
+    "test": "node --test",
+    "validate": "office-addin-manifest validate manifest.xml",
+    "sync": "node -e \"require('fs').cpSync('../plagx-preflight/src','docs/lib',{recursive:true})\""
+  },
+  "author": "Plagiarism Checker X (https://plagiarismcheckerx.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "office-addin-manifest": "^3.0.1"
+  }
+}
